@@ -1,0 +1,216 @@
+{%extends "navbar.html" %}
+{%block content%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <link rel="icon" href="static/icons/icons.png" type="image/png" sizes="16x16">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        :root {
+            --text-color--: #DF927D;
+            --text-color-blend--: #030558;
+            --back-up-color--: #E7FAF9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: url('static/img/backround.png');
+            margin-left: 20px;
+            background-size: 330px;
+            background-repeat: no-repeat;
+
+
+        }
+
+        nav {
+            width: 100%;
+            padding: 2rem 5rem 2rem 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+
+
+        .h1 {
+            font-size: 20px;
+            color: #365B6D;
+            font-weight: 600;
+        }
+
+        .h2 {
+            font-size: 20px;
+            color: #41C1BA;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+        }
+
+        li a {
+            color: #41C1BA;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 25px;
+            padding: 10px 15px;
+            transition: 6.5s;
+        }
+
+        button {
+            color: #41C1BA;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: rgb(152, 255, 221);
+            border-color: rgb(152, 255, 221);
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+
+        .gambar {
+            width: 50%;
+            /* Menyesuaikan lebar gambar */
+            text-align: right;
+        }
+
+        .gambar img {
+            width: 150%;
+            margin-left: 30px;
+            height: auto;
+            padding-right: 50px;
+
+
+        }
+
+
+        .home-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px;
+
+        }
+
+        .home-text {
+            width: 50%;
+            padding: 30px;
+        }
+
+        h4 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #365B6D;
+        }
+
+        .btn-container {
+            padding: 50px;
+
+        }
+
+        .button1 {
+            background-color: #3391FF;
+            color: white;
+            padding: 8px;
+            border-radius: 10px;
+            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+
+        }
+
+        .button2 {
+            background-color: #D9D9D9;
+            color: black;
+            padding: 8px;
+            border-radius: 10px;
+            margin: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+
+        }
+
+        .btn1-container {
+            padding: 10px;
+        }
+
+        .cont {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="home-container">
+        <div class="cont">
+
+            <div class="home-text">
+                <h4>Eye Health</h4>
+                <p>Menjaga kesehatan mata adalah hal paling utama
+                    karena mata adalah salah satu organ dalam tubuh
+                    yang sangat penting dalam melakukan aktivitas
+                    sehari - hari, ayoo!! kita jaga kesehatan mata kita
+                    dengan Gizi dan aktivitas yang cukup !!</p>
+            </div>
+
+            <div class="btn-container">
+                <a href="cek_kesehatan" class="button button1">
+                    <img src="static/img/Vector.png" alt="logo" style="width:20px; height:20px; margin:5px;">
+                    Cek Kesehatan Mata
+                </a>
+
+                <a href="chatbot" class="button button2">
+                    <img src="static/img/mage_robot-happy.png" alt="logo" style="width: 20px; height:20px; margin:5px;">
+                    Chatbot
+                </a>
+            </div>
+
+        </div>
+
+
+
+        <div class="gambar">
+            <img src="static/img/home.png" alt="home">
+        </div>
+    </div>
+
+    {%endblock%}
+</body>
+
+</html>

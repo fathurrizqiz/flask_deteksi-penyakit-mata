@@ -1,0 +1,168 @@
+{%extends "succes_login.html" %}
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cek_kesehatan</title>
+
+
+    <link rel="icon" href="static/icons/icons.png" type="image/png" sizes="16x16">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        :root {
+            --text-color--: #DF927D;
+            --text-color-blend--: #030558;
+            --back-up-color--: #E7FAF9;
+        }
+
+        .h1 {
+            font-size: 20px;
+            color: #365B6D;
+            font-weight: 600;
+        }
+
+        .h2 {
+            font-size: 20px;
+            color: #41C1BA;
+            font-weight: 600;
+        }
+
+
+        #alert {
+            background-color: #F7F2C3;
+
+            width: 500px;
+            padding: 30px;
+            border-radius: 20px;
+            margin-left: 50px;
+            margin-top: 40px;
+        }
+
+
+        form img {
+            width: 25px;
+        }
+
+        .perhatian {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #B9B200;
+        }
+
+        .adjust {
+            color: #B9B200;
+            width: 100%;
+        }
+
+        .adjust img {
+            margin: 2px;
+        }
+
+        h4 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #365B6D;
+            margin: 20px;
+        }
+
+        .choose {
+            padding: 20px;
+        }
+
+        .choose label {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .choose input {
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+
+        #hasil {
+            background-color: #dfdfff;
+            width: 500px;
+            padding: 30px;
+            border-radius: 20px;
+            margin-left: 700px;
+            margin-top: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        #output {
+            background-color: #E8F1F2;
+            width: 45%;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 40px;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div class="container">
+        <form id="alert" action="#">
+            <div class="adjust">
+                <img src="static/img/alert.png" alt="alert" h6>Perhatian
+                deteksi ini menggunakan teknologi
+                kecerdasan buatan dengan nilai akurasi 90% yang
+                artinya hasil yang ditampilkan masih mempunyai
+                kesalahan prediksi. kami menyarankan anda untuk
+                melakukan deteksi 3-5 kali dengan sudut foto yang
+                berbeda.
+                </h6>
+            </div>
+            <div class="chosse mb-3 ">
+                <div class="input m-10">
+                    <label for="formFile" class="form-label">Unggah Gambar</label>
+                    <input class="form-control" type="file" id="formFile">
+
+                </div>
+        </form>
+
+    </div>
+    <div id="output">
+        <h4>Hasil Output</h4>
+        <p>Hasil deteksi AI akan muncul di sini setelah gambar diunggah.</p>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    {%endblock%}
+</body>
+
+</html>

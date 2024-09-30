@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="icon" href="static/icons/icons.png" type="image/png" sizes="16x16">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: url('static/img/backround.png');
+            margin-left: 20px;
+            background-size: 330px;
+            background-repeat: no-repeat;
+
+
+        }
+
+        nav {
+            width: 100%;
+            padding: 2rem 5rem 2rem 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+
+
+        .h1 {
+            font-size: 20px;
+            color: #365B6D;
+            font-weight: 600;
+        }
+
+        .h2 {
+            font-size: 20px;
+            color: #41C1BA;
+            font-weight: 600;
+            margin: 5px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+        }
+
+        li a {
+            color: #41C1BA;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 25px;
+            padding: 10px 15px;
+            transition: 6.5s;
+        }
+
+        .login-sec {
+            color: #41C1BA;
+            font-size: 18px;
+            font-weight: 200;
+            /* background-color: rgb(152, 255, 221);
+            border-color: rgb(152, 255, 221); */
+            padding: auto;
+            border-radius: 10px;
+            padding-right: 25px;
+            padding-top: 10px;
+
+
+        }
+
+        .column {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="column">
+                <h1 class="h1">Eye</h1>
+                <h1 class="h2">Health</h1>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li> <a href="home">Home</a></li>
+                    <li> <a href="about">About</a></li>
+                    <li> <a href="blog">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="login-sec">
+                <ul>
+                    <li><a href="profile">Akun</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+    </header>
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+
+</html>
